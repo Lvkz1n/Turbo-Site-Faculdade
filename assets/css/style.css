@@ -1,142 +1,50 @@
-/* Define a fonte 'Poppins' importada do Google Fonts para ser usada em todo o documento */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 /* Definições gerais para todos os elementos HTML */
-* {
+* {  
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-  
-  .logo {
-    width: 150px; /* Defina a largura desejada */
-    height: auto; /* Mantém a proporção original da imagem */
-    user-select: none; /* Evita a seleção de texto no logotipo */
   }
 
-  .menu a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 1.1em;
-    font-weight: 600;
-    margin-left: 10px;
-  }
-  
-  a:hover {
-    opacity: 0.7;
-  }
-
-  /* Estilização do botão "Login" no cabeçalho */
-.menu .btnLogin-popup {
-    width: 100px;
-    height: 30px;
-    background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: 600;
-    transition: 0.5s;
-}
-
-.menu .btnLogin-popup:hover {
-    background: #fff; /* Cor de fundo ao passar o mouse */
-    color: #162938; /* Cor do texto ao passar o mouse */
-}
-  /* Fim da Estilização do botão "Login" no cabeçalho */
-
-
-  nav {
+  header, nav, main, aside, footer {
+    background: tomato;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #23232e;
-    height: 10vh;
-    padding: 10px 10px;
-    z-index: 99;
+    margin: 3px;
   }
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3px;
+  flex: 1 1 100vh;
   
-  main {
-    background: url("/assets/img/bg.jpg") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-list li {
-    letter-spacing: 2px;
-    margin-left: 22px;
-  }
-  
-  .mobile-menu {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .mobile-menu div {
-    width: 22px;
-    height: 4px;
-    background: #fff;
-    margin: 6px;
-    transition: 0.3s;
-  }
-  
-  @media (max-width: 768px) {
-    body {
-      overflow-x: hidden;
-    }
-    .nav-list {
-      position: absolute;
-      top: 12vh;
-      right: 0;
-      width: 40vw;
-      height: 92vh;
-      background: #23232e;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    }
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0;
-    }
-    .mobile-menu {
-      display: block;
-    }
-  }
-  
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
+}
+
+header {
+  flex: 1 1 100vh;
+  height: 100px;
+}
+
+nav {
+  flex: 1 1 200px;
+}
+
+main {
+  flex: 20 1 500px;
+  height: calc(100vh - 224px);
+}
+
+aside {
+flex: 1 1 200px;
+}
+
+footer {
+flex: 1 1 100vw;
+height: 100px;
+}
+
+
+
+
