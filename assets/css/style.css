@@ -27,8 +27,20 @@ header {
   height: 100px;
 }
 
+header #logo {
+  flex: 0 1 200px
+  background: #c9c9c9
+}
+
 nav {
-  flex: 1 1 200px;
+  flex: 1 1 100vw;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav a {
+  margin: 5%;
+  font-size: 20pt;
 }
 
 main {
@@ -45,6 +57,11 @@ flex: 1 1 100vw;
 height: 100px;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 @media only screen and ( max-width: 923px) {
  
   main{
@@ -55,8 +72,16 @@ height: 100px;
     flex: 1 1 100vw;
     height: 100px;
  }
-
-
 }
 
+@media only screen and ( max-width: 717px) {
+  nav {
+    height: 100px;
+  }
+
+  main {
+    height: calc(100vh - 436px);
+  }
+
+}
 
