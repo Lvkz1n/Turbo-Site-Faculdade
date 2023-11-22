@@ -9,7 +9,6 @@
   }
 
   header, nav, main, aside, footer {
-    background: tomato;
     display: flex;
     margin: 3px;
   }
@@ -23,36 +22,52 @@ body {
 }
 
 header {
+  background: tomato;
   flex: 1 1 100vw;
   height: 100px;
 }
 
 header #logo {
+  background: #c9c9c9;
   flex: 0 1 200px
-  background: #c9c9c9
 }
 
-nav {
+#openMenu, #closeMenu {
+  border: none;
+  background: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  display: none;
+}
+
+nav { /*cabeçalho*/
+  background: tomato;
   flex: 1 1 100vw;
   align-items: center;
   justify-content: flex-end;
+  
 }
 
 nav a {
-  margin: 5%;
+  margin: 3%;
   font-size: 20pt;
 }
 
-main {
+main { /*Principal*/
+  background: tomato;
   flex: 20 1 500px;
   height: calc(100vh - 224px);
 }
 
-aside {
+aside { /*relacionados*/
+  background: tomato;
 flex: 1 1 200px;
 }
 
-footer {
+footer { /*footer*/
+  background: tomato;
 flex: 1 1 100vw;
 height: 100px;
 }
@@ -74,7 +89,7 @@ a{
  }
 }
 
-@media only screen and ( max-width: 717px) {
+@media only screen and ( max-width: 780px) {
   nav {
     height: 100px;
   }
@@ -85,3 +100,31 @@ a{
 
 }
 
+@media only screen and ( max-width: 780px) {
+   #openMenu, #closeMenu {
+    display: block;
+   }
+   #openMenu {
+    margin-left: auto;
+   }
+   #closeMenu {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+   }
+   nav {
+    position: fixed;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 255, 255, 0.8);
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s; /* Adiciona transições para opacidade e transformação */
+    transform: translateX(100%); /* Inicialmente esconde o menu para a direita */
+  }
+  
+}
