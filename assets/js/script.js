@@ -27,3 +27,42 @@ closeMenu.addEventListener('click', () => {
     menu.removeAttribute('style');
   }, 200);
 });
+
+
+
+// Banener Rotativo
+
+let currentIndex = 0;
+const banner = document.querySelector('.banner');
+const bannerItems = document.querySelectorAll('.banner-item');
+const bannerIndicators = document.querySelectorAll('.banner-indicator');
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % bannerItems.length;
+    updateBanner();
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + bannerItems.length) % bannerItems.length;
+    updateBanner();
+}
+
+function updateBanner() {
+    banner.style.transform = `translateX(-${currentIndex * 100}%)`;
+    bannerIndicators.forEach((indicator, index) => {
+        if (index === currentIndex) {
+            indicator.classList.add('active');
+        } else {
+            indicator.classList.remove('active');
+        }
+    });
+}
+
+bannerIndicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        currentIndex = index;
+        updateBanner();
+    });
+});
+
+setInterval(nextSlide, 5000);
