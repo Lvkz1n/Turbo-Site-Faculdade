@@ -8,12 +8,18 @@ openMenu.addEventListener('click', () => {
   // Adiciona um pequeno atraso antes de definir a opacidade para garantir que a transição de fade-in seja visível
   setTimeout(() => {
     menu.style.opacity = '1';
+    
+    openMenu.style.display = 'none';
+
     menu.style.transform = 'translateX(0)'; // Adiciona transição da direita para a esquerda
   }, 10);
 });
 
 closeMenu.addEventListener('click', () => {
   menu.style.opacity = '0';
+
+  openMenu.removeAttribute('style');
+
   menu.style.transform = 'translateX(100%)'; // Move o menu para a direita para ocultá-lo
 
   // Adiciona um pequeno atraso antes de remover o estilo para garantir que a transição de fade-out seja visível
