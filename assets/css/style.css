@@ -97,11 +97,22 @@ main section {
   height: auto;
 }
 
-
+#foto img {
+  justify-content: space-between;
+  align-items: center;
+  width: 3%;
+}
 
 aside { /*relacionados*/
   background: rgb(44, 44, 44);
 flex: 1 1 200px;
+}
+
+aside section {
+  width: 100%;
+  height: 1000px;
+  margin: 10px;
+  background: #9a9a9a;
 }
 
 footer { /*footer*/
@@ -112,12 +123,11 @@ footer { /*footer*/
   padding: 10px;
 }
 
-#foto img {
-  justify-content: space-between;
-  align-items: center;
-  width: 3%;
+footer section {
+  width: 100%;
+  height: 300px;
+  margin: 10px;
 }
-
 
 a{
   text-decoration: none;
