@@ -1,4 +1,4 @@
-front: fazer Compartilhamentyo, ajustar materias, modal
+front: fazer Compartilhamento, ajustar materias, modal
 back: filtro de materias, ajeita footer, realocar sobre e area de contato
 banco de dados: area de contatos funcional, newsletter, botao modo escuro
 

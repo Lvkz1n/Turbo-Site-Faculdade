@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+:root{
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #f5f5f5;
+}
+
+
 /* Definições gerais para todos os elementos HTML */
 * {  
     margin: 0;
@@ -18,7 +26,6 @@ body {
   flex-wrap: wrap;
   margin: 3px;
   flex: 1 1 100vw;
-  background-color: tomato;
   
 }
 
@@ -89,20 +96,18 @@ main section {
 }
 
 .banner-item {
+  border-radius: 10px;
   flex: 0 0 100%;
   box-sizing: border-box;
 }
 
 .banner-item img {
   width: 100%;
+  height: 100%;
   height: auto;
 }
 
-#foto img {
-  justify-content: space-between;
-  align-items: center;
-  width: 3%;
-}
+/* aside */
 
 aside { /*relacionados*/
   background: rgb(44, 44, 44);
@@ -116,77 +121,136 @@ aside section {
   background: #9a9a9a;
 }
 
-footer { /*footer*/
-  background: rgb(44, 44, 44);
-  flex: 1 1 100vw;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 10px;
-}
+/*footer*/
 
-footer section {
-  width: 100%;
-  height: 300px;
-  margin: 10px;
-}
-
-a{
-  text-decoration: none;
-  color: #fff;
-}
-
-p{
-  text-decoration: none;
-  color: #fff;
-}
-
-@media only screen and ( max-width: 923px) {
-
-  header {
-    order: 0 ;
-  }
  
-  main{
-     order: 1 ;
-  }
 
- aside{
-    flex: 1 1 100vw;
-    order: 2 ;
- }
 
  footer {
-  order: 3;
+  width: 100%;
+  color: var(--color-neutral-40);
  }
+
+ .footer-link {
+  text-decoration: none;
+ }
+
+ #footer_content {
+  background-color: var(--color-neutral-10);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+ }
+
+ #footer_contacts h1 {
+  margin-bottom: 0.75rem;
+ }
+
+ #footer_social_media {
+   display: flex;
+   gap: 2rem;
+   margin-top: 1.5rem;
+ }
+
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-neutral-40);
+  border-radius: 50%;
+  transition: all 0.4s;
 }
 
-@media only screen and ( max-width: 780px) {
-   #openMenu, #closeMenu {
-    display: block;
-   }
-   #openMenu {
-    margin-left: auto;
-   }
-   #closeMenu {
-    position: fixed;
-    right: 15px;
-    top: 15px;
-   }
-   nav {
-    position: fixed;
-    flex-direction: column;
-    width: 100vw;
-    background: rgb(255, 255, 255, 0.8);
-    align-content: center;
-    justify-content: center;
-    margin: 0;
-    display: none;
-    opacity: 0;
-    transition: opacity 0.2s, transform 0.2s; /* Adiciona transições para opacidade e transformação */
-    transform: translateX(100%); /* Inicialmente esconde o menu para a direita */
-  }
-  
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;
 }
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.7;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267b3;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link {
+  color: var(--color-neutral-30);
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+  color: #7f37c9;
+}
+
+#footer_subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem
+}
+
+#input_group{
+  display: flex;
+  align-items: center;
+  background-color: var(--color-neutral-0);
+  border-radius: 4px;
+}
+
+#input_group input {
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#input_group button {
+  background-color: #7f37c9;
+  border: none;
+  color: var(--color-neutral-40);
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#input_group button:hover {
+  opacity: 0.7;
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-neutral-0);
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+
+
+
+
+
+
+
 
 .grid1 {
   display: grid;
@@ -236,3 +300,53 @@ p{
  .materiaso img {
   
  }
+
+
+@media only screen and ( max-width: 923px) {
+
+  header {
+    order: 0 ;
+  }
+ 
+  main{
+     order: 1 ;
+  }
+
+ aside{
+    flex: 1 1 100vw;
+    order: 2 ;
+ }
+
+ footer {
+  order: 3;
+ }
+}
+
+@media only screen and ( max-width: 780px) {
+   #openMenu, #closeMenu {
+    display: block;
+   }
+   #openMenu {
+    margin-left: auto;
+   }
+   #closeMenu {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+   }
+   nav {
+    position: fixed;
+    flex-direction: column;
+    width: 100vw;
+    background: rgb(255, 255, 255, 0.8);
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s; /* Adiciona transições para opacidade e transformação */
+    transform: translateX(100%); /* Inicialmente esconde o menu para a direita */
+  }
+  
+}
+
