@@ -18,7 +18,7 @@
 
   header, nav, main, aside, footer {
     display: flex;
-    margin: 3px;
+    margin: 1px; /* espaço entre as grades */
   }
 
 body {
@@ -103,7 +103,6 @@ main section {
 
 .banner-item img {
   width: 100%;
-  height: 100%;
   height: auto;
 }
 
@@ -123,12 +122,10 @@ aside section {
 
 /*footer*/
 
- 
-
-
- footer {
-  width: 100%;
+  footer {
+  max-width: 100%;
   color: var(--color-neutral-40);
+  margin-top: auto;
  }
 
  .footer-link {
@@ -236,13 +233,16 @@ aside section {
 }
 
 #footer_copyright {
+  margin-top: auto;
   display: flex;
   justify-content: center;
   background-color: var(--color-neutral-0);
   font-size: 0.9rem;
-  padding: 1.5rem;
+  padding: 0.6rem;
   font-weight: 100;
 }
+
+
 
 
 
@@ -302,7 +302,7 @@ aside section {
  }
 
 
-@media only screen and ( max-width: 923px) {
+@media only screen and ( max-width: 870px) {
 
   header {
     order: 0 ;
@@ -320,9 +320,12 @@ aside section {
  footer {
   order: 3;
  }
-}
 
-@media only screen and ( max-width: 780px) {
+ #footer_content {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+ }
+
    #openMenu, #closeMenu {
     display: block;
    }
@@ -349,4 +352,10 @@ aside section {
   }
   
 }
-
+@media  screen and (max-eidth 426px) {
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+   }
+  
+}
