@@ -1,0 +1,64 @@
+
+</html><!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--0000000000-->
+    <section>
+        <!--Envia a entrada do usuario a um servidor-->
+        <form action="#" method="POST">
+        <!--Agrupar elementos do formulario.-->
+        <fieldset>
+            <!--container estilizavel CSS.-->
+            <!--Usado quando nao há outra tag container adequada -->
+            <div class="container">
+                <!--Campo de entrada definido com tipo de entrada definido para texto.-->
+                <!--required - Indica que o preenchimento é obrigatório.-->
+                <input type="text" required name="name" autofocus>
+                <!--Representa uma legenda para um elemento.-->
+                <label>Name</label>
+            </div>
+            <div class="container">
+                <input type="text" required name="sobrenome">
+                <label>Sobrenome</label>
+            </div>
+        </fieldset>
+        <fieldset>
+          <div class="container">
+            <input type="email" required name="email">
+            <label>E-mail</label>
+          </div>
+          <fieldset>
+            <div class="container">
+                <input type="password" required name="password">
+                <label>Senha</label>
+            </div>
+            <div class="container">
+                <input type="password" required name="confirm">
+                <label>Confirmar</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div id="check">
+                <input type="checkbox" required name="accept">
+                <label>Aceito os termos e condições</label>
+            </div>
+                <!-- Botão de envio.-->
+                <button>Criar Conta</button>
+          </fieldset>
+          <a href="#">Ler Termos de uso.</a>
+          
+    </section>
+    <div>
+        <!--Botao de voltar-->
+        <button>Volta para Home</button>
+          <a href="/index.html"></a>
+
+    </div>
+    
+</body>
+</html>
