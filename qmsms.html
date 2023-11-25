@@ -9,18 +9,30 @@
 <body>
 
     <header>
-        <img src="/img/logo site.png" alt="Logo da TurboXperience" class="logo">
-        <nav class="navegacao">
-            <a href="index.html">Home</a>
-            <a href="qmsms.html">Sobre</a>
-            <a href="#">Serviços</a>
-            <a href="contato.html">Contato</a>
-        </nav>
+
+        <a href="index.html" class="logo">
+            <img src="/assets/img/logo site.png" alt="Logo da TurboXperience">
+          </a>
+          
+
+        <button id="openMenu">&#9776</button>
+
+     <nav>
+        <button id="closeMenu">X</button>
+
+        <a href="/index.html">Home</a>
+        <a href="/qmsms.html">Sobre</a>
+        <a href="/materias.html">Materia</a>
+        <a href="/contato.html">Contato</a>
+        <a href="#" class="btnLogin-popup">Login</a>
+
+    </nav>
     </header>
+
 <main>
 
-    <section id="Texto">
-         <div id="container">
+    <section class="centralizar">
+         <div id="sobrenos">
              <h3> Bem-vindo ao TurboXperience - Onde a Estrada Encontra a Paixão!</h3>
 
             <p>Somos um grupo de entusiastas automotivos que acompanham a empolgação por carros em todas as suas formas e potências. Aqui, transformamos nossa paixão em palavras, trazendo para você um blog repleto de análises, curiosidades e discussões sobre os veículos que fazem nossos corações acelerarem.</p>
@@ -40,6 +52,75 @@
 
 
 </main>
+
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>Logo</h1>
+            <p>Vrummmmm</p>
+
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        
+        <ul class="footer-list">
+            <li>
+                <h3>Funcionarios</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Luiz</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">J.Vinicius</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">P.Miguel</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Navegaçao</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Home</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Materias</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Sobre</a>
+            </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Subscribe</h3>
+
+            <p>
+                Enter your e-mail to get notified about
+                our news solutions
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 <script src="./JS/index.js"></script>
