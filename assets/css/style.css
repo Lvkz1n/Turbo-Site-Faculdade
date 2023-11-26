@@ -395,3 +395,25 @@ footer {
   }
 
 }
+.box{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.dropdown-menu{
+  position: absolute;
+  border: 1px solid black;
+  display: none;
+}
+
+.dropdown-menu button{
+  display: block;
+  color: black;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
