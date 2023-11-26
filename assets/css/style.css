@@ -416,37 +416,6 @@ footer {
 /*final do footer*/
 
 
-<<<<<<< Updated upstream
-#ajustem {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: auto;
-  margin: 10px;
-  flex-wrap: wrap;
-  grid-gap: 20px;
-
-}
-#ajustem p{
-  -webkit-line-clamp: 2; 
-  -webkit-box-orient: vertical;
-  max-width: 80%;
-  font-weight: 80;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 600;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  
-}
-
-@media screen and (max-width: 768px) {
-  #ajustem {
-    grid-template-columns: repeat(1, 1fr);
-    transform: scale(0.8);
-    text-align: left;
-  }
-
-}
 .box{
   display: none;
 }
@@ -469,5 +438,3 @@ footer {
 .dropdown:hover .dropdown-menu{
   display: block;
 }
-=======
->>>>>>> Stashed changes
