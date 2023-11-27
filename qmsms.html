@@ -19,6 +19,35 @@
         <button id="openMenu">&#9776</button>
 
      <nav>
+        <style>
+            body {
+              transition: background-color 0.5s;
+            }
+            
+            .dark-mode {
+              background-color: #333;
+              color: #fff;
+            }
+          </style>
+          <title>Light/Dark Mode Toggle</title>
+        </head>
+        <body>
+        
+          <h1>Exemplo de Light/Dark Mode</h1>
+        
+          <label class="switch">
+            <input type="checkbox" id="modeToggle">
+            <span class="slider"></span>
+          </label>
+        
+          <script>
+            const modeToggle = document.getElementById('modeToggle');
+            const body = document.body;
+        
+            modeToggle.addEventListener('change', () => {
+              body.classList.toggle('dark-mode');
+            });
+          </script>
         <button id="closeMenu">X</button>
 
         <a href="/index.html">Home</a>
