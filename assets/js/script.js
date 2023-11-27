@@ -67,17 +67,28 @@ bannerIndicators.forEach((indicator, index) => {
 
 setInterval(nextSlide, 5000);
 
+// Filtro
 
 function filterElements(category) {
   const elements = document.querySelectorAll('.box');
 
   elements.forEach((element) => {
-    element.classList.remove("show");
+    element.classList.add("hidden");
     if (category === "Todos" || element.classList.contains(category)) {
-      element.classList.add("show");
+      element.classList.remove("hidden");
     }
   });
 }
+
+function alternarVisibilidade(category) {
+  var objeto = document.getElementById('dropdown-menu');
+  if (objeto.style.display === 'none') {
+    objeto.style.display = 'block';
+  } else {
+    objeto.style.display = 'none';
+  }
+}
+
 
 
 // login 
@@ -100,3 +111,4 @@ mode.addEventListener('click', () => {
 
     form.classList.remove('dark');
 });
+
