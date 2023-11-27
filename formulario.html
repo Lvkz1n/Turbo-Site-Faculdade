@@ -1,64 +1,90 @@
-
-</html><!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-</head>
-<body>
-    <!--0000000000-->
-    <section>
-        <!--Envia a entrada do usuario a um servidor-->
-        <form action="#" method="POST">
-        <!--Agrupar elementos do formulario.-->
-        <fieldset>
-            <!--container estilizavel CSS.-->
-            <!--Usado quando nao há outra tag container adequada -->
-            <div class="container">
-                <!--Campo de entrada definido com tipo de entrada definido para texto.-->
-                <!--required - Indica que o preenchimento é obrigatório.-->
-                <input type="text" required name="name" autofocus>
-                <!--Representa uma legenda para um elemento.-->
-                <label>Name</label>
-            </div>
-            <div class="container">
-                <input type="text" required name="sobrenome">
-                <label>Sobrenome</label>
-            </div>
-        </fieldset>
-        <fieldset>
-          <div class="container">
-            <input type="email" required name="email">
-            <label>E-mail</label>
-          </div>
-          <fieldset>
-            <div class="container">
-                <input type="password" required name="password">
-                <label>Senha</label>
-            </div>
-            <div class="container">
-                <input type="password" required name="confirm">
-                <label>Confirmar</label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <div id="check">
-                <input type="checkbox" required name="accept">
-                <label>Aceito os termos e condições</label>
-            </div>
-                <!-- Botão de envio.-->
-                <button>Criar Conta</button>
-          </fieldset>
-          <a href="#">Ler Termos de uso.</a>
-          
-    </section>
-    <div>
-        <!--Botao de voltar-->
-        <button>Volta para Home</button>
-          <a href="/index.html"></a>
-
-    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/style.css">
     
+    <title>Login</title>
+</head>
+<body>   
+    <main class="container">
+        <form class="login_form">
+
+            <div class="form_header">
+                <h1>Login</h1>
+                <i class="mode_icon" class="fa-solid fa-moon"></i>
+            </div>
+
+
+            <div class="social_media">
+
+                <a href="#">
+                    <img src="/assets/img/facebook.png" alt="">
+                </a>
+
+
+                <a href="#">
+                    <img src="/assets/img/google.png" alt="Google logo">
+                </a>
+                
+
+                <a href="#">
+                    <img src="/assets/img/github.png" alt="">
+                </a>
+            </div>
+
+
+            <div class="inputs">
+
+                <div class="input-box">
+                    <label for="name">
+                        Name
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" class="name" name="name">
+                        </div>
+                    </label>
+                </div>
+                
+
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" class="email" name="email">
+                        </div>
+                    </label>
+                </div>
+                
+
+                <div class="input-box">
+                    <label for="password">
+                        Password
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" class="password" name="password">
+                        </div>
+                    </label>
+                    
+
+                    <div class="forgot_password">
+                        <a href="#">
+                            Forgot your password?
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="login_button">
+                Login
+            </button>
+        </form>
+    </main>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
