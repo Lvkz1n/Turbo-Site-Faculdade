@@ -30,7 +30,7 @@
     font-family: 'Poppins', sans-serif;
   }
 
-  header, nav, main, aside, footer {
+main, aside, footer {
     display: flex;
     margin: 0; 
   }
@@ -53,6 +53,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 26px;
 }
 
 .logo {
@@ -64,19 +65,24 @@
 }
 
 .nav-list {
+  list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
   
 }
 
 .nav-list ul {
   list-style: none;
   display: flex;
-  margin: 0;
+  margin: 10px;
   padding: 0;
+
 }
 
 .nav-item {
-  margin-right: 20px;
+  margin: 30px;
 }
 
 .nav-link {
@@ -88,16 +94,17 @@
 .login-button button {
   background-color: rgb(75, 4, 156);
   color: white;
-  padding: 10px 20px;
+  padding: 15px 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: 30px;
 }
 
 .login-button button a {
   text-decoration: none;
   color: #fff;
-  font-weight: 500;
+  font-weight: 550;
   font-size: 1.1rem;
 }
 
@@ -118,6 +125,9 @@
   }
   .login-button {
       display: none;
+  }
+  .login-button button{
+    margin: 5px;
   }
   .mobile-menu-icon {
       display: block;

@@ -10,53 +10,42 @@
 <body>
 
     <header>
-
-        <a href="index.html" class="logo">
+        <nav class="nav-bar">
+          <a href="index.html" class="logo">
             <img src="/assets/img/logo site.png" alt="Logo da TurboXperience">
           </a>
-          
-
-        <button id="openMenu">&#9776</button>
-
-     <nav>
-        <style>
-            body {
-              transition: background-color 0.5s;
-            }
-            
-            .dark-mode {
-              background-color: #333;
-              color: #fff;
-            }
-          </style>
-          <title>Light/Dark Mode Toggle</title>
-        </head>
-        <body>
-
-        
-          <label class="switch">
-            <input type="checkbox" id="modeToggle">
-            <span class="slider"></span>
-          </label>
-        
-          <script>
-            const modeToggle = document.getElementById('modeToggle');
-            const body = document.body;
-        
-            modeToggle.addEventListener('change', () => {
-              body.classList.toggle('dark-mode');
-            });
-          </script>
-        <button id="closeMenu">X</button>
-
-        <a href="/index.html">Home</a>
-        <a href="/qmsms.html">Sobre</a>
-        <a href="/materias.html">Materia</a>
-        <a href="/contato.html">Contato</a>
-        <a href="#" class="btnLogin-popup">Login</a>
-
-    </nav>
-    </header>
+    
+          <div class="nav-list">
+            <ul>
+              <li class="nav-item"><a href="/index.html" class="nav-link">Início</a></li>
+              <li class="nav-item"><a href="/materias.html" class="nav-link">Matérias</a></li>
+              <li class="nav-item"><a href="/qmsms.html" class="nav-link">Sobre</a></li>
+              <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+          </div>
+    
+          <div class="login-button">
+            <button><a href="/formulario.html">Entrar</a></button>
+          </div>
+    
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="/assets/img/menu_white_36dp.svg" alt=""></button>
+          </div>
+        </nav>
+    
+        <div class="mobile-menu">
+          <ul>
+            <li class="nav-item"><a href="/index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="/materias.html" class="nav-link">Matérias</a></li>
+            <li class="nav-item"><a href="/qmsms.html" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+          </ul>
+    
+          <div class="login-button">
+            <button><a href="/formulario.html">Entrar</a></button>
+          </div>
+        </div>
+      </header>
 
     <main><!-- local da materia-->
         <section>
