@@ -140,6 +140,15 @@
     color: var(--color-purple-50);
 }
 
+.registerkkj a {
+    text-decoration: none;
+    color: var(--color-dark-50);
+    font-size: 12px;
+}
+
+.registerkkj a:hover {
+    color: var(--color-purple-50);
+}
 
 .login_button {
     border: none;
