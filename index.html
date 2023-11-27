@@ -9,27 +9,44 @@
 </head>
 <body>
 
-<header>
-
-        <a href="index.html" class="logo">
+    <header>
+        <nav class="nav-bar">
+          <a href="index.html" class="logo">
             <img src="/assets/img/logo site.png" alt="Logo da TurboXperience">
           </a>
-          
+    
+          <div class="nav-list">
+            <ul>
+              <li class="nav-item"><a href="/index.html" class="nav-link">Início</a></li>
+              <li class="nav-item"><a href="/materias.html" class="nav-link">Matérias</a></li>
+              <li class="nav-item"><a href="/qmsms.html" class="nav-link">Sobre</a></li>
+              <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+          </div>
+    
+          <div class="login-button">
+            <button><a href="/formulario.html">Entrar</a></button>
+          </div>
+    
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="/assets/img/menu_white_36dp.svg" alt=""></button>
+          </div>
+        </nav>
+    
+        <div class="mobile-menu">
+          <ul>
+            <li class="nav-item"><a href="/index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="/materias.html" class="nav-link">Matérias</a></li>
+            <li class="nav-item"><a href="/qmsms.html" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+          </ul>
+    
+          <div class="login-button">
+            <button><a href="/formulario.html">Entrar</a></button>
+          </div>
+        </div>
+      </header>
 
-        <button class="openMenu">&#9776</button>
-
-     <nav>
-
-
-        <a href="/index.html">Home</a>
-        <a href="/qmsms.html">Sobre</a>
-        <a href="/materias.html">Materia</a>
-        <a href="/contato.html">Contato</a>
-        <a href="/formulario.html" class="btnLogin-popup">Login</a>
-
-    </nav>
-</header>
-<body>
 <main><!-- local da materia-->
     <section>
         <div class="banner-container">
